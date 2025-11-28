@@ -36,7 +36,6 @@ data/raw_extras/
 sample_images/
 
 # Video assets
-*.mp4
 *.avi
 *.mov
 *.webm
