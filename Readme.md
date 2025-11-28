@@ -1,9 +1,9 @@
-# 🏥 Multi-Agent Medical Assistant  
+# ArogyaSetu
 An AI-powered unified clinical support and learning platform
 
 ---
 
-## 📌 Problem Statement
+## Problem Statement
 Healthcare professionals face growing patient loads, slow diagnostic workflows, and medical information scattered across PDFs, scans, reports, and research papers — making fast and accurate medical decisions difficult.  
 This challenge is reinforced by the need for expert human validation to ensure clinical safety.
 
@@ -12,7 +12,7 @@ Medical students also struggle with fragmented learning resources. Concepts, dis
 
 ---
 
-## 🎯 Solution Overview
+## Solution Overview
 A *unified multi-agent AI system* that combines:
 
 - Medical reasoning and AI consultancy
@@ -28,16 +28,16 @@ All in a single integrated platform for both clinicians and medical students and
 
 ---
 
-## 🏗️ System Architecture
+## System Architecture
 
 ![System Architecture Flow Diagram](assets/diagram-export-11-28-2025-8_08_48-PM.png)
 *Complete system architecture showing data flow and component interactions*
 
 ---
 
-## ⚙ Technical Architecture
+## Technical Architecture
 
-### 🧠 Multi-Agent System
+### Multi-Agent System
 
 ![Multi-Agent System](assets/Multiagent-screenshot-img.jpg)
 *Multi-agent system architecture and workflow demonstration*
@@ -45,7 +45,7 @@ All in a single integrated platform for both clinicians and medical students and
 This component represents a **medical intelligence subsystem** within a larger healthcare platform. It handles AI-powered diagnosis assistance, medical research retrieval, and conversational interaction, operating as an independent multi-agent unit that can integrate with broader hospital or digital-health solutions.
 
 
-## Core Capabilities
+#### Core Capabilities
 - **Multi-agent orchestration** for separating tasks like diagnosis, retrieval, reasoning, and routing
 - **Agentic RAG pipeline** combining PDF parsing, semantic chunking, vector search (Qdrant), and cross-encoder reranking
 - **Medical imaging analysis** for:
@@ -57,7 +57,7 @@ This component represents a **medical intelligence subsystem** within a larger h
 - **Input/output guardrails** to ensure safe and medically-relevant responses
 - **Speech-based interaction** and conversational response generation
 
-## Workflow Overview
+#### Workflow Overview
 1. User input (text / speech / image)
 2. Input guardrails and preprocessing
 3. Routing either to:
@@ -68,7 +68,7 @@ This component represents a **medical intelligence subsystem** within a larger h
 
 ---
 
-## Future Enhancements
+#### Future Enhancements
 - Brain tumor Computer Vision model integration
 - Community contributions and feature expansion
 - Improved agent reasoning policies
@@ -76,21 +76,20 @@ This component represents a **medical intelligence subsystem** within a larger h
 
 ---
 
-##
-# ArogyaSetu (AI consultant)
+### ArogyaSetu (AI consultant)
 
 ![AI consultant](assets/AI-consultant-demo.mp4)
 
 The AI Doctor system uses a Next.js + React frontend powered by the Google Live API to capture real-time audio, video, and on-screen inputs from the patient. The backend, built with Node.js, streams this data to Gemini 2.5/1.5 models, which analyze symptoms, interpret video cues, extract medical details from shared reports, and convert the conversation into structured medical information. Together, this creates a fast, multimodal, real-time digital doctor experience.
 
-## Frontend (Patient Interface)
+#### Frontend (Patient Interface)
 
 - Next.js / React – main UI
 - Google Live API JS SDK – real-time audio, video & screen streaming
 - Tailwind CSS / ShadCN UI – clean UI components
 - WebRTC – low-latency audio/video capture
 
-## Backend (Core Logic & Orchestration)
+#### Backend (Core Logic & Orchestration)
 
 - Node.js (Express / Fastify) – backend API
 - Google Gemini 2.5 / 1.5 via Live API for:
@@ -100,7 +99,7 @@ The AI Doctor system uses a Next.js + React frontend powered by the Google Live 
 - Audio conversation → structured medical data
 
 
-### Multimodal Video Generation Pipeline
+#### Multimodal Video Generation Pipeline
 
 ![AI Video Based Learning](assets/ai-video-based-learning.mp4)
 *AI-powered video generation system for educational content creation and learning enhancement*
@@ -114,7 +113,7 @@ The AI Doctor system uses a Next.js + React frontend powered by the Google Live 
 
 This script provides a fully free alternative to the Google Maps Platform by combining **OpenStreetMap (OSM) + Overpass API + Folium** to search, filter, and visualize nearby blood donation centers.
 
-## Core Functional Workflow
+#### Core Functional Workflow
 1. **Location Geocoding**
    - Converts a text-based location into latitude/longitude using **Nominatim (OpenStreetMap)** via the `geopy` library.
 
@@ -136,12 +135,12 @@ This script provides a fully free alternative to the Google Maps Platform by com
    - Saves the map as **HTML** and auto-opens it in the browser.
 
 
-## Outcome
+#### Outcome
 Generates a standalone interactive HTML heatmap visualizing nearby blood donation centers using **100% free, open-source mapping tools**, without requiring Google Maps API keys.
 
 
 
-## 🎯 Future Goals  
+## Future Goals  
 The project aims to expand with:
 
 - *Solar-Powered Deployment*  
@@ -157,10 +156,10 @@ The project aims to expand with:
 
 ---
 
-## 🙏 Acknowledgements  
+## Acknowledgements  
 This project was conceptualized for hackathon/demo use, inspired by real clinical workflows and modern AI agent frameworks.
 
 ---
 
-## 📄 License  
-MIT License 
+## License  
+Apache-2.0 License
