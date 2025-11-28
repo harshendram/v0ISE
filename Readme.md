@@ -98,6 +98,7 @@ The AI Doctor system uses a Next.js + React frontend powered by the Google Live 
 - Screen-based EHR/report extraction
 - Audio conversation → structured medical data
 
+---
 
 ### Multimodal Video Generation Pipeline
 
@@ -105,6 +106,8 @@ The AI Doctor system uses a Next.js + React frontend powered by the Google Live 
 *AI-powered video generation system for educational content creation and learning enhancement*
 
 **Note:** The pipeline implementation and source code for this multimodal video generation system are not publicly available as they are part of ongoing research work conducted by our hackathon team member. The research is currently in progress and will be disclosed upon completion of the study.
+
+---
 
 ### Blood Donation Center Locator
 
