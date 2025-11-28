@@ -66,8 +66,6 @@ This component represents a **medical intelligence subsystem** within a larger h
    - LLM reasoning agent for final response generation
 4. Output guardrails → formatted text/audio response
 
----
-
 #### Future Enhancements
 - Brain tumor Computer Vision model integration
 - Community contributions and feature expansion
@@ -141,7 +139,7 @@ This script provides a fully free alternative to the Google Maps Platform by com
 #### Outcome
 Generates a standalone interactive HTML heatmap visualizing nearby blood donation centers using **100% free, open-source mapping tools**, without requiring Google Maps API keys.
 
-
+---
 
 ## Future Goals  
 The project aims to expand with:
