@@ -76,7 +76,7 @@ This component represents a **medical intelligence subsystem** within a larger h
 
 ---
 
-### ArogyaSetu (AI consultant)
+### AI consultant
 
 ![AI consultant](assets/AI-consultant-demo.mp4)
 
@@ -99,7 +99,7 @@ The AI Doctor system uses a Next.js + React frontend powered by the Google Live 
 - Audio conversation → structured medical data
 
 
-#### Multimodal Video Generation Pipeline
+### Multimodal Video Generation Pipeline
 
 ![AI Video Based Learning](assets/ai-video-based-learning.mp4)
 *AI-powered video generation system for educational content creation and learning enhancement*
