@@ -100,7 +100,8 @@ The AI Doctor system uses a Next.js + React frontend powered by the Google Live 
 
 ### Multimodal Video Generation Pipeline
 
-![AI Video Based Learning](assets/ai-video-based-learning.mp4)
+![AI Video Based Learning]<video src="https://github.com/user-attachments/assets/c788c69d-4064-4948-a78e-41f28c29cbb9" controls width="800"></video>
+
 *AI-powered video generation system for educational content creation and learning enhancement*
 
 **Note:** The pipeline implementation and source code for this multimodal video generation system are not publicly available as they are part of ongoing research work conducted by our hackathon team member. The research is currently in progress and will be disclosed upon completion of the study.
