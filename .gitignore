@@ -16,10 +16,6 @@ __pycache__/
 *.onnx
 *.pb
 
-# Data directories
-data/
-sample_images/
-
 # Node modules and dependencies
 node_modules/
 .pnp
