@@ -76,7 +76,7 @@ This component represents a **medical intelligence subsystem** within a larger h
 
 ### AI consultant
 
-![AI consultant](assets/AI-consultant-demo.mp4)
+<video src="https://github.com/user-attachments/assets/3fcc5af1-28ca-4a0f-93c1-744d3a1db328" controls width="800"></video>
 
 The AI Doctor system uses a Next.js + React frontend powered by the Google Live API to capture real-time audio, video, and on-screen inputs from the patient. The backend, built with Node.js, streams this data to Gemini 2.5/1.5 models, which analyze symptoms, interpret video cues, extract medical details from shared reports, and convert the conversation into structured medical information. Together, this creates a fast, multimodal, real-time digital doctor experience.
 
