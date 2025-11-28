@@ -1,0 +1,693 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_98a43e719c123a6db3d0959c4113f6b9 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+    <script src="https://cdn.jsdelivr.net/gh/python-visualization/folium@main/folium/templates/leaflet_heat.min.js"></script>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_98a43e719c123a6db3d0959c4113f6b9" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_98a43e719c123a6db3d0959c4113f6b9 = L.map(
+                "map_98a43e719c123a6db3d0959c4113f6b9",
+                {
+                    center: [12.9767936, 77.590082],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 13,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_08c1348cb382990c6dd3fc310ccdb6e3 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_08c1348cb382990c6dd3fc310ccdb6e3.addTo(map_98a43e719c123a6db3d0959c4113f6b9);
+        
+    
+            var marker_6a8846a6a1ac1dd704e530a3a0c6c749 = L.marker(
+                [12.9706777, 77.5859401],
+                {
+}
+            ).addTo(map_98a43e719c123a6db3d0959c4113f6b9);
+        
+    
+            var icon_4dc0e7c53308cd4ed88065f915736c5b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "plus-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_01112cf6f41074d505a0e1f5f9f1d246 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_e10087710a6fd0cfedf64ba0f61f48f9 = $(`<div id="html_e10087710a6fd0cfedf64ba0f61f48f9" style="width: 100.0%; height: 100.0%;">         <div style="width: 300px">             <h4 style="color: #d32f2f;">Saint Martha' Hospital Blood Bank</h4>             <p><b>📍 Address:</b> Nrupatunga Road</p>             <p><b>📞 Phone:</b> 8040128243</p>             <p><b>🕒 Hours:</b> 24/7</p>             <p><b>📏 Distance:</b> 0.81 km</p>             <p><b>🏥 Type:</b> blood_bank</p>                          <hr>             <div style="text-align: center;">                 <a href="https://www.google.com/maps/dir/?api=1&destination=12.9706777,77.5859401"                     target="_blank"                     style="background-color: #4285f4; color: white; padding: 8px 16px;                            text-decoration: none; border-radius: 4px; font-weight: bold;                           display: inline-block;">                     🗺️ Get Directions                 </a>             </div>         </div>         </div>`)[0];
+                popup_01112cf6f41074d505a0e1f5f9f1d246.setContent(html_e10087710a6fd0cfedf64ba0f61f48f9);
+            
+        
+
+        marker_6a8846a6a1ac1dd704e530a3a0c6c749.bindPopup(popup_01112cf6f41074d505a0e1f5f9f1d246)
+        ;
+
+        
+    
+    
+            marker_6a8846a6a1ac1dd704e530a3a0c6c749.bindTooltip(
+                `<div>
+                     Saint Martha' Hospital Blood Bank
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_6a8846a6a1ac1dd704e530a3a0c6c749.setIcon(icon_4dc0e7c53308cd4ed88065f915736c5b);
+            
+    
+            var marker_0e85e7c8a2c0404b1623e9439c2a05f3 = L.marker(
+                [12.9675046, 77.5897226],
+                {
+}
+            ).addTo(map_98a43e719c123a6db3d0959c4113f6b9);
+        
+    
+            var icon_da803a4391c6760d8c234f92fdadcf84 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "plus-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_89b73ad7de401ec7b866f7ecabf545b4 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_693aca6967ee3db09f730a71cdc05b59 = $(`<div id="html_693aca6967ee3db09f730a71cdc05b59" style="width: 100.0%; height: 100.0%;">         <div style="width: 300px">             <h4 style="color: #d32f2f;">Swamy Vivekananda Voluntary Blood Bank</h4>             <p><b>📍 Address:</b> No. 20, 3rd Floor, SGRR Complex, 1st Cross, Raja Ram Mohan Roy Road, S. R. Nagar</p>             <p><b>📞 Phone:</b> 8022224044</p>             <p><b>🕒 Hours:</b> 24/7</p>             <p><b>📏 Distance:</b> 1.03 km</p>             <p><b>🏥 Type:</b> blood_bank</p>                          <hr>             <div style="text-align: center;">                 <a href="https://www.google.com/maps/dir/?api=1&destination=12.9675046,77.5897226"                     target="_blank"                     style="background-color: #4285f4; color: white; padding: 8px 16px;                            text-decoration: none; border-radius: 4px; font-weight: bold;                           display: inline-block;">                     🗺️ Get Directions                 </a>             </div>         </div>         </div>`)[0];
+                popup_89b73ad7de401ec7b866f7ecabf545b4.setContent(html_693aca6967ee3db09f730a71cdc05b59);
+            
+        
+
+        marker_0e85e7c8a2c0404b1623e9439c2a05f3.bindPopup(popup_89b73ad7de401ec7b866f7ecabf545b4)
+        ;
+
+        
+    
+    
+            marker_0e85e7c8a2c0404b1623e9439c2a05f3.bindTooltip(
+                `<div>
+                     Swamy Vivekananda Voluntary Blood Bank
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_0e85e7c8a2c0404b1623e9439c2a05f3.setIcon(icon_da803a4391c6760d8c234f92fdadcf84);
+            
+    
+            var marker_abe3f2836061c3249a0fcab612bdf319 = L.marker(
+                [12.9681502, 77.5950569],
+                {
+}
+            ).addTo(map_98a43e719c123a6db3d0959c4113f6b9);
+        
+    
+            var icon_f3632c819a63bd2c7e4070c002024223 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "plus-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_7738e358164f8ec2ceb873733cb84cac = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_8fad6d1a608cefd7e84b717a882027bb = $(`<div id="html_8fad6d1a608cefd7e84b717a882027bb" style="width: 100.0%; height: 100.0%;">         <div style="width: 300px">             <h4 style="color: #d32f2f;">Mallya Hospital Blood Bank</h4>             <p><b>📍 Address:</b> No. 2, Vittal Mallya Road</p>             <p><b>📞 Phone:</b> 08022277979</p>             <p><b>🕒 Hours:</b> 24/7</p>             <p><b>📏 Distance:</b> 1.1 km</p>             <p><b>🏥 Type:</b> blood_bank</p>             <p><b>🌐 Website:</b> <a href="https://www.mallyahospital.net/" target="_blank">Visit</a></p>             <hr>             <div style="text-align: center;">                 <a href="https://www.google.com/maps/dir/?api=1&destination=12.9681502,77.5950569"                     target="_blank"                     style="background-color: #4285f4; color: white; padding: 8px 16px;                            text-decoration: none; border-radius: 4px; font-weight: bold;                           display: inline-block;">                     🗺️ Get Directions                 </a>             </div>         </div>         </div>`)[0];
+                popup_7738e358164f8ec2ceb873733cb84cac.setContent(html_8fad6d1a608cefd7e84b717a882027bb);
+            
+        
+
+        marker_abe3f2836061c3249a0fcab612bdf319.bindPopup(popup_7738e358164f8ec2ceb873733cb84cac)
+        ;
+
+        
+    
+    
+            marker_abe3f2836061c3249a0fcab612bdf319.bindTooltip(
+                `<div>
+                     Mallya Hospital Blood Bank
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_abe3f2836061c3249a0fcab612bdf319.setIcon(icon_f3632c819a63bd2c7e4070c002024223);
+            
+    
+            var marker_454c11bff274d8f66c27868014f5d807 = L.marker(
+                [12.9838508, 77.5993699],
+                {
+}
+            ).addTo(map_98a43e719c123a6db3d0959c4113f6b9);
+        
+    
+            var icon_0cdec3b39cd209af006370289d69b11b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "plus-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_88104ad15259db148e82a862a9540a27 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_a959a9b77625aefb0364180852e1cdde = $(`<div id="html_a959a9b77625aefb0364180852e1cdde" style="width: 100.0%; height: 100.0%;">         <div style="width: 300px">             <h4 style="color: #d32f2f;">Government Haji Sir Ismail Sait Gosha Hospital Blood Bank</h4>             <p><b>📍 Address:</b> Near KSPCB Limited, Tasker Town, Shivaji Nagar</p>             <p><b>📞 Phone:</b> 8022866529</p>             <p><b>🕒 Hours:</b> 24/7</p>             <p><b>📏 Distance:</b> 1.27 km</p>             <p><b>🏥 Type:</b> blood_bank</p>                          <hr>             <div style="text-align: center;">                 <a href="https://www.google.com/maps/dir/?api=1&destination=12.9838508,77.5993699"                     target="_blank"                     style="background-color: #4285f4; color: white; padding: 8px 16px;                            text-decoration: none; border-radius: 4px; font-weight: bold;                           display: inline-block;">                     🗺️ Get Directions                 </a>             </div>         </div>         </div>`)[0];
+                popup_88104ad15259db148e82a862a9540a27.setContent(html_a959a9b77625aefb0364180852e1cdde);
+            
+        
+
+        marker_454c11bff274d8f66c27868014f5d807.bindPopup(popup_88104ad15259db148e82a862a9540a27)
+        ;
+
+        
+    
+    
+            marker_454c11bff274d8f66c27868014f5d807.bindTooltip(
+                `<div>
+                     Government Haji Sir Ismail Sait Gosha Hospital Blood Bank
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_454c11bff274d8f66c27868014f5d807.setIcon(icon_0cdec3b39cd209af006370289d69b11b);
+            
+    
+            var marker_623dd818812bf55c0bdba2eb89169641 = L.marker(
+                [12.9884377, 77.5944668],
+                {
+}
+            ).addTo(map_98a43e719c123a6db3d0959c4113f6b9);
+        
+    
+            var icon_fd7adf00fe7a1406510ac8093ee8c571 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "plus-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_bddeb75bae4b663732ea83997fa6d3c8 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_3205f23f38023fa92b99549dc6a71429 = $(`<div id="html_3205f23f38023fa92b99549dc6a71429" style="width: 100.0%; height: 100.0%;">         <div style="width: 300px">             <h4 style="color: #d32f2f;">Fortis Hospital Private Limited Blood Bank</h4>             <p><b>📍 Address:</b> 14, Sheriffs Centre, Cunningham Road</p>             <p><b>📞 Phone:</b> 08041994515; 08022261037</p>             <p><b>🕒 Hours:</b> 24/7</p>             <p><b>📏 Distance:</b> 1.37 km</p>             <p><b>🏥 Type:</b> blood_bank</p>             <p><b>🌐 Website:</b> <a href="https://www.fortishealthcare.com/" target="_blank">Visit</a></p>             <hr>             <div style="text-align: center;">                 <a href="https://www.google.com/maps/dir/?api=1&destination=12.9884377,77.5944668"                     target="_blank"                     style="background-color: #4285f4; color: white; padding: 8px 16px;                            text-decoration: none; border-radius: 4px; font-weight: bold;                           display: inline-block;">                     🗺️ Get Directions                 </a>             </div>         </div>         </div>`)[0];
+                popup_bddeb75bae4b663732ea83997fa6d3c8.setContent(html_3205f23f38023fa92b99549dc6a71429);
+            
+        
+
+        marker_623dd818812bf55c0bdba2eb89169641.bindPopup(popup_bddeb75bae4b663732ea83997fa6d3c8)
+        ;
+
+        
+    
+    
+            marker_623dd818812bf55c0bdba2eb89169641.bindTooltip(
+                `<div>
+                     Fortis Hospital Private Limited Blood Bank
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_623dd818812bf55c0bdba2eb89169641.setIcon(icon_fd7adf00fe7a1406510ac8093ee8c571);
+            
+    
+            var marker_f951524dc7c63191f24432632e0781e0 = L.marker(
+                [12.9643654, 77.5897381],
+                {
+}
+            ).addTo(map_98a43e719c123a6db3d0959c4113f6b9);
+        
+    
+            var icon_0addad391a2d128a2103540279f6b24d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "plus-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_022158c97316cf89b2f76e42d2c7f775 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_e33bcf7d77f1b83b747b5954609066b1 = $(`<div id="html_e33bcf7d77f1b83b747b5954609066b1" style="width: 100.0%; height: 100.0%;">         <div style="width: 300px">             <h4 style="color: #d32f2f;">Bangalore Institute of Oncology Blood Bank</h4>             <p><b>📍 Address:</b> No. 8, P. Kalinga Rao Road, Sampangiram Nagar</p>             <p><b>📞 Phone:</b> 8040206121</p>             <p><b>🕒 Hours:</b> 24/7</p>             <p><b>📏 Distance:</b> 1.38 km</p>             <p><b>🏥 Type:</b> blood_bank</p>                          <hr>             <div style="text-align: center;">                 <a href="https://www.google.com/maps/dir/?api=1&destination=12.9643654,77.5897381"                     target="_blank"                     style="background-color: #4285f4; color: white; padding: 8px 16px;                            text-decoration: none; border-radius: 4px; font-weight: bold;                           display: inline-block;">                     🗺️ Get Directions                 </a>             </div>         </div>         </div>`)[0];
+                popup_022158c97316cf89b2f76e42d2c7f775.setContent(html_e33bcf7d77f1b83b747b5954609066b1);
+            
+        
+
+        marker_f951524dc7c63191f24432632e0781e0.bindPopup(popup_022158c97316cf89b2f76e42d2c7f775)
+        ;
+
+        
+    
+    
+            marker_f951524dc7c63191f24432632e0781e0.bindTooltip(
+                `<div>
+                     Bangalore Institute of Oncology Blood Bank
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_f951524dc7c63191f24432632e0781e0.setIcon(icon_0addad391a2d128a2103540279f6b24d);
+            
+    
+            var marker_4e1d4980d474c5799b0c0c602f0aa794 = L.marker(
+                [12.9843552, 77.5787035],
+                {
+}
+            ).addTo(map_98a43e719c123a6db3d0959c4113f6b9);
+        
+    
+            var icon_a25a516c814e0ffd14912afa41da718f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "plus-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_62440235c48f1bb07c8afd6ec002541b = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_3267e51de05d4d4895e0d8559757e8b8 = $(`<div id="html_3267e51de05d4d4895e0d8559757e8b8" style="width: 100.0%; height: 100.0%;">         <div style="width: 300px">             <h4 style="color: #d32f2f;">Indian Red Cross Society - Karnataka Red Cross Blood Bank</h4>             <p><b>📍 Address:</b> Red Cross Bhavan, 326, Ist Floor, Race Course Road, Bengaluru</p>             <p><b>📞 Phone:</b> 8022268435</p>             <p><b>🕒 Hours:</b> 24/7</p>             <p><b>📏 Distance:</b> 1.49 km</p>             <p><b>🏥 Type:</b> blood_bank</p>             <p><b>🌐 Website:</b> <a href="https://www.redcrosskarnataka.org/" target="_blank">Visit</a></p>             <hr>             <div style="text-align: center;">                 <a href="https://www.google.com/maps/dir/?api=1&destination=12.9843552,77.5787035"                     target="_blank"                     style="background-color: #4285f4; color: white; padding: 8px 16px;                            text-decoration: none; border-radius: 4px; font-weight: bold;                           display: inline-block;">                     🗺️ Get Directions                 </a>             </div>         </div>         </div>`)[0];
+                popup_62440235c48f1bb07c8afd6ec002541b.setContent(html_3267e51de05d4d4895e0d8559757e8b8);
+            
+        
+
+        marker_4e1d4980d474c5799b0c0c602f0aa794.bindPopup(popup_62440235c48f1bb07c8afd6ec002541b)
+        ;
+
+        
+    
+    
+            marker_4e1d4980d474c5799b0c0c602f0aa794.bindTooltip(
+                `<div>
+                     Indian Red Cross Society - Karnataka Red Cross Blood Bank
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_4e1d4980d474c5799b0c0c602f0aa794.setIcon(icon_a25a516c814e0ffd14912afa41da718f);
+            
+    
+            var marker_fa4d73b07b0ae32010ca79e9891d4001 = L.marker(
+                [12.9823231, 77.6038881],
+                {
+}
+            ).addTo(map_98a43e719c123a6db3d0959c4113f6b9);
+        
+    
+            var icon_66ca9fe75ea11943968e3147241495a5 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "plus-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_58bb56c82501321b772f7e14af3a7ee2 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_97ad7848bad31a17b30de9bf9d9c720b = $(`<div id="html_97ad7848bad31a17b30de9bf9d9c720b" style="width: 100.0%; height: 100.0%;">         <div style="width: 300px">             <h4 style="color: #d32f2f;">Bowring and Lady Curzon Hospitals Blood Bank</h4>             <p><b>📍 Address:</b> Shivaji Nagar, Bengaluru</p>             <p><b>📞 Phone:</b> 8025591362</p>             <p><b>🕒 Hours:</b> 24/7</p>             <p><b>📏 Distance:</b> 1.62 km</p>             <p><b>🏥 Type:</b> blood_bank</p>             <p><b>🌐 Website:</b> <a href="http://www.bowringhospital.org" target="_blank">Visit</a></p>             <hr>             <div style="text-align: center;">                 <a href="https://www.google.com/maps/dir/?api=1&destination=12.9823231,77.6038881"                     target="_blank"                     style="background-color: #4285f4; color: white; padding: 8px 16px;                            text-decoration: none; border-radius: 4px; font-weight: bold;                           display: inline-block;">                     🗺️ Get Directions                 </a>             </div>         </div>         </div>`)[0];
+                popup_58bb56c82501321b772f7e14af3a7ee2.setContent(html_97ad7848bad31a17b30de9bf9d9c720b);
+            
+        
+
+        marker_fa4d73b07b0ae32010ca79e9891d4001.bindPopup(popup_58bb56c82501321b772f7e14af3a7ee2)
+        ;
+
+        
+    
+    
+            marker_fa4d73b07b0ae32010ca79e9891d4001.bindTooltip(
+                `<div>
+                     Bowring and Lady Curzon Hospitals Blood Bank
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_fa4d73b07b0ae32010ca79e9891d4001.setIcon(icon_66ca9fe75ea11943968e3147241495a5);
+            
+    
+            var marker_1646eba708ad9cc0e511b9578f796fc7 = L.marker(
+                [12.9918178, 77.5919824],
+                {
+}
+            ).addTo(map_98a43e719c123a6db3d0959c4113f6b9);
+        
+    
+            var icon_8b6a8f594667fb8602039970b58d54ce = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "plus-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_fd01ac2e04048f172eaba1510488a536 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_6fafb39b57598b795328e514e6e731c4 = $(`<div id="html_6fafb39b57598b795328e514e6e731c4" style="width: 100.0%; height: 100.0%;">         <div style="width: 300px">             <h4 style="color: #d32f2f;">Sankalp Blood Centre</h4>             <p><b>📍 Address:</b> Not available</p>             <p><b>📞 Phone:</b> N/A</p>             <p><b>🕒 Hours:</b> N/A</p>             <p><b>📏 Distance:</b> 1.67 km</p>             <p><b>🏥 Type:</b> blood_donation</p>                          <hr>             <div style="text-align: center;">                 <a href="https://www.google.com/maps/dir/?api=1&destination=12.9918178,77.5919824"                     target="_blank"                     style="background-color: #4285f4; color: white; padding: 8px 16px;                            text-decoration: none; border-radius: 4px; font-weight: bold;                           display: inline-block;">                     🗺️ Get Directions                 </a>             </div>         </div>         </div>`)[0];
+                popup_fd01ac2e04048f172eaba1510488a536.setContent(html_6fafb39b57598b795328e514e6e731c4);
+            
+        
+
+        marker_1646eba708ad9cc0e511b9578f796fc7.bindPopup(popup_fd01ac2e04048f172eaba1510488a536)
+        ;
+
+        
+    
+    
+            marker_1646eba708ad9cc0e511b9578f796fc7.bindTooltip(
+                `<div>
+                     Sankalp Blood Centre
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_1646eba708ad9cc0e511b9578f796fc7.setIcon(icon_8b6a8f594667fb8602039970b58d54ce);
+            
+    
+            var marker_cc31d2d3468a153f5ca03a3cc3e1c591 = L.marker(
+                [12.9916942, 77.5952446],
+                {
+}
+            ).addTo(map_98a43e719c123a6db3d0959c4113f6b9);
+        
+    
+            var icon_5e9f76a388c294912341bcb36846bff1 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "plus-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_08cbf04e15a38d7216a453b31d2f1101 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_259e91d28ca6b97e0c78718f00831953 = $(`<div id="html_259e91d28ca6b97e0c78718f00831953" style="width: 100.0%; height: 100.0%;">         <div style="width: 300px">             <h4 style="color: #d32f2f;">Bangalore Lions Service Trust - Lions Blood Bank</h4>             <p><b>📍 Address:</b> Bhagwan Mahaveer Jain Hospital, Millers Road, Vasantha Nagar</p>             <p><b>📞 Phone:</b> 8022266807</p>             <p><b>🕒 Hours:</b> 24/7</p>             <p><b>📏 Distance:</b> 1.74 km</p>             <p><b>🏥 Type:</b> blood_bank</p>                          <hr>             <div style="text-align: center;">                 <a href="https://www.google.com/maps/dir/?api=1&destination=12.9916942,77.5952446"                     target="_blank"                     style="background-color: #4285f4; color: white; padding: 8px 16px;                            text-decoration: none; border-radius: 4px; font-weight: bold;                           display: inline-block;">                     🗺️ Get Directions                 </a>             </div>         </div>         </div>`)[0];
+                popup_08cbf04e15a38d7216a453b31d2f1101.setContent(html_259e91d28ca6b97e0c78718f00831953);
+            
+        
+
+        marker_cc31d2d3468a153f5ca03a3cc3e1c591.bindPopup(popup_08cbf04e15a38d7216a453b31d2f1101)
+        ;
+
+        
+    
+    
+            marker_cc31d2d3468a153f5ca03a3cc3e1c591.bindTooltip(
+                `<div>
+                     Bangalore Lions Service Trust - Lions Blood Bank
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_cc31d2d3468a153f5ca03a3cc3e1c591.setIcon(icon_5e9f76a388c294912341bcb36846bff1);
+            
+    
+            var heat_map_d497fcec2115b3ccd0ba5aab1c524245 = L.heatLayer(
+                [[12.9706777, 77.5859401, 9.19], [12.9675046, 77.5897226, 8.97], [12.9681502, 77.5950569, 8.9], [12.9838508, 77.5993699, 8.73], [12.9884377, 77.5944668, 8.629999999999999], [12.9643654, 77.5897381, 8.620000000000001], [12.9843552, 77.5787035, 8.51], [12.9823231, 77.6038881, 8.379999999999999], [12.9918178, 77.5919824, 8.33], [12.9916942, 77.5952446, 8.26]],
+                {
+  "minOpacity": 0.3,
+  "maxZoom": 18,
+  "radius": 25,
+  "blur": 15,
+  "gradient": {
+  0.2: "blue",
+  0.4: "lime",
+  0.6: "orange",
+  1: "red",
+},
+}
+            );
+        
+    
+            heat_map_d497fcec2115b3ccd0ba5aab1c524245.addTo(map_98a43e719c123a6db3d0959c4113f6b9);
+        
+    
+            var marker_9779af5c57be077c17e91bb5f002f465 = L.marker(
+                [12.9767936, 77.590082],
+                {
+}
+            ).addTo(map_98a43e719c123a6db3d0959c4113f6b9);
+        
+    
+            var icon_5d1d37af763fa57418d6c720689c6e74 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "star",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_7182f2c498f10f2125d83213c9d38578 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_1fea3b6befde89aff824b9c83bb6eab7 = $(`<div id="html_1fea3b6befde89aff824b9c83bb6eab7" style="width: 100.0%; height: 100.0%;">Search Center: Bengaluru, India</div>`)[0];
+                popup_7182f2c498f10f2125d83213c9d38578.setContent(html_1fea3b6befde89aff824b9c83bb6eab7);
+            
+        
+
+        marker_9779af5c57be077c17e91bb5f002f465.bindPopup(popup_7182f2c498f10f2125d83213c9d38578)
+        ;
+
+        
+    
+    
+            marker_9779af5c57be077c17e91bb5f002f465.bindTooltip(
+                `<div>
+                     Your Search Location
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_9779af5c57be077c17e91bb5f002f465.setIcon(icon_5d1d37af763fa57418d6c720689c6e74);
+            
+    
+            var circle_284b7f05546ab48c9eca0f337f7a1bb5 = L.circle(
+                [12.9767936, 77.590082],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5000, "stroke": true, "weight": 2}
+            ).addTo(map_98a43e719c123a6db3d0959c4113f6b9);
+        
+    
+        var popup_ecc94faf476bf322140c1fce03b18dc9 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c483190234f1771e368950932461a033 = $(`<div id="html_c483190234f1771e368950932461a033" style="width: 100.0%; height: 100.0%;">Search Radius: 5 km</div>`)[0];
+                popup_ecc94faf476bf322140c1fce03b18dc9.setContent(html_c483190234f1771e368950932461a033);
+            
+        
+
+        circle_284b7f05546ab48c9eca0f337f7a1bb5.bindPopup(popup_ecc94faf476bf322140c1fce03b18dc9)
+        ;
+
+        
+    
+    
+            var layer_control_98f4d8a8e940931b182d44a70f0bbad3_layers = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_08c1348cb382990c6dd3fc310ccdb6e3,
+                },
+                overlays :  {
+                    "macro_element_d497fcec2115b3ccd0ba5aab1c524245" : heat_map_d497fcec2115b3ccd0ba5aab1c524245,
+                },
+            };
+            let layer_control_98f4d8a8e940931b182d44a70f0bbad3 = L.control.layers(
+                layer_control_98f4d8a8e940931b182d44a70f0bbad3_layers.base_layers,
+                layer_control_98f4d8a8e940931b182d44a70f0bbad3_layers.overlays,
+                {
+  "position": "topright",
+  "collapsed": true,
+  "autoZIndex": true,
+}
+            ).addTo(map_98a43e719c123a6db3d0959c4113f6b9);
+
+        
+</script>
+</html>
